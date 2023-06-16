@@ -46,6 +46,8 @@ if ($hasil) {
                 <input type="submit" value="Login"><br>
                 <br>Jika belum mendaftar, <a href="daftar_p.php">Daftar disini</a>
             </form>
-            <form action="index.php"><button type="submit">Home</button><br><br </center> </fieldset>  
+            <form action="index.php"><button type="submit">Home</button><br><br 
+        </center> 
+    </fieldset> 
 </body> 
 </html>

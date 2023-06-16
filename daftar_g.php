@@ -6,10 +6,9 @@ if (isset($_POST['ndp'])) {
 $ndp = $_POST['ndp']; 
 $nam = $_POST['nama']; 
 $jan = $_POST['jantina']; 
-$kel = $_POST['kelas']; 
 
-$sql = "INSERT INTO daftarguru (ndp, nama, jantina, kelas) 
-VALUES ('$ndp','$nam', '$jan','$kel')"; 
+$sql = "INSERT INTO daftarguru (ndp, nama, jantina) 
+VALUES ('$ndp','$nam', '$jan')"; 
 
 $hasil = mysqli_query($samb, $sql); 
 
@@ -26,7 +25,7 @@ window.location='daftar_g.php'</script>";
 <html>
 <fieldset>
     <legend>
-        <h2>PENDAFTARAN GURU</h2>
+        <h2>PENDAFTARAN PENSYARAH</h2>
     </legend>
 
     <head>
@@ -52,16 +51,6 @@ window.location='daftar_g.php'</script>";
                 <option value="Perempuan">Perempuan</option>
             </select><br><br>
 
-            <label>Kelas</label><br>
-            <select name="kelas" id="kelas" required>
-                <option value="">--Pilih--</option>
-                <option value="tpp">TPP</option>
-                <option value="tkr">TKR</option>
-                <option value="tpm">TPM</option>
-                <option value="cadd">CADD</option>
-            </select><br><br>
-
-            </select><br>
             <button type="submit">Daftar</button>
             <button type="reset">Reset</button><br><br>
             *Pilihan hanya dibenarkan sekali sahaja.

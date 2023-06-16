@@ -14,13 +14,26 @@ if (isset($_POST['idguru'])){
 
 <head>
     <style>
+        input{
+            width: 200px;
+            text-align: center;
+            margin-bottom: 40px; 
+            margin-top: 180px;
+            border-radius: 5px;
+            border: 2px solid gray;
+            height: 40px;
+            transition-duration: 0.3s;
+            background-color: rgba(0, 0, 0, 0.0);
+        }
+
+        input:hover {
+            background-color: lightblue;
+        }
+
         body {
             background-image: linear-gradient(lightblue, floralwhite);
         }
 
-        input {
-            margin-top: 200px;
-        }
     </style>
 </head>
 
@@ -32,7 +45,7 @@ if (isset($_POST['idguru'])){
                     <input onclick="location.href='login_p.php'" type="submit" value="PELAJAR">
                 </td>
                 <td>
-                    <input onclick="location.href='login_g.php'" type="submit" value="GURU">
+                    <input onclick="location.href='login_g.php'" type="submit" value="PENSYARAH">
                 </td>
             </tr>
             </form>

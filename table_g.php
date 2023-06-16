@@ -42,7 +42,7 @@ include "header.php";
       text-align: right;
     }
 
-    .cg{
+    .cg {
       color: green;
     }
 
@@ -50,20 +50,38 @@ include "header.php";
       text-align: center;
     }
 
-    .note{
+    .note {
       border: 1px solid black;
       float: right;
       padding: 10px;
       margin-bottom: 10px;
     }
 
-    .tarikh1{
-      margin-left: 655px;
+    .tarikh1 {
+      margin-left: 585px;
     }
 
-    button:hover{
+    button:hover {
       background-color: white;
       color: red;
+    }
+
+    .button a {
+      border: 1px solid #fff;
+      padding: 10px 25px;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      margin-top: 20px;
+      display: inline-block;
+      color: #333;
+      margin-right: 30px;
+      float: right;
+    }
+
+    .button a:hover {
+      background: #fff;
+      color: #333;
     }
   </style>
 </head>
@@ -73,17 +91,22 @@ include "header.php";
   <form action="mc.php">
     <button type="submit" class="button">MC</button></form>
 
+  <div class="button">
+    <a href="login_g.php">Log Out</a>
+  </div>
+
   <h2>JADUAL KELAS TPP</h2>
+  <h3>SEM 3 SESI 2/2022</h3>
 
   <div class="note">
-  <h4>NOTE:</h4>
-  <h4 class="cg"> 
-    PHP - Pn Rosnidaini Binti Shudin <br>
-    JAVA - Pn Tg Muzlina Hanim Binti Tg Semara <br>
-    MA - Pn Nor Dahiyah Binti Ghazali <br>
-  </h4>
-</div>
-<br><br><br>
+    <h4>NOTE:</h4>
+    <h4 class="cg">
+      PHP - Pn Rosnidaini Binti Shudin <br>
+      JAVA - Pn Tg Muzlina Hanim Binti Tg Semara <br>
+      MA - Pn Nor Dahiyah Binti Ghazali <br>
+    </h4>
+  </div>
+  <br><br><br>
   <div class="table1">
     <table class="">
 

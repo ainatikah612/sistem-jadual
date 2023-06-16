@@ -6,10 +6,9 @@ if (isset($_POST['ndp'])) {
 $ndp = $_POST['ndp']; 
 $nam = $_POST['nama']; 
 $jan = $_POST['jantina']; 
-$kel = $_POST['kelas']; 
 
-$sql = "INSERT INTO daftarpelajar (ndp, nama, jantina, kelas) 
-VALUES ('$ndp','$nam', '$jan','$kel')"; 
+$sql = "INSERT INTO daftarpelajar (ndp, nama, jantina) 
+VALUES ('$ndp','$nam', '$jan')"; 
 
 $hasil = mysqli_query($samb, $sql); 
 
@@ -37,6 +36,7 @@ window.location='daftar_p.php'</script>";
             }
         </style>
     </head>
+
     <body>
         <form method="POST">
             <label>Nombor NDP</label><br>
@@ -50,17 +50,6 @@ window.location='daftar_p.php'</script>";
                 <option value="Lelaki">Lelaki</option>
                 <option value="Perempuan">Perempuan</option>
             </select><br><br>
-            <!-- ubah nama kelas di sini -->
-            <label>Kelas</label><br>
-            <select name="kelas" id="kelas" required>
-                <option value="">--Pilih--</option>
-                <option value="tpp">TPP</option>
-                <option value="tkr">TKR</option>
-                <option value="tpm">TPM</option>
-                <option value="cadd">CADD</option>
-            </select><br><br>
-
-            </select><br>
 
             <button type="submit">Daftar</button>
             <button type="reset">Reset</button><br><br>
@@ -69,4 +58,5 @@ window.location='daftar_p.php'</script>";
         <form action="index.php"> <button type="submit">Home</button><br><br>
 </fieldset>
 </body>
+
 </html>

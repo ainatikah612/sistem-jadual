@@ -32,47 +32,47 @@ VALUES ('$tarikh1','$tarikh2', '$hari','$seb')";
     ?>
 
 <html>
+
 <head>
 
-        <h2>MC Cuti Kecemasan Guru</h2>
-        <style>
-        body{
-            background-image: linear-gradient(lightblue,floralwhite);
+    <h2>MC Cuti Kecemasan Pensyarah</h2>
+    <style>
+        body {
+            background-image: linear-gradient(lightblue, floralwhite);
         }
-        
     </style>
 </head>
 
 <body>
     <fieldset>
-<center>
-            <form method="POST" >
+        <center>
+            <form method="POST">
                 <p>Surat MC</p>
                 <label>Tarikh Cuti</label><br>
                 <label>Dari</label>
-                    <input type="text" id="tarikh1" name="tarikh1" placeholder="YYYY-MM-DD" value=""
-        min="2022-11-01" max="2023-01-31" ><br>
-                    <label>Sehingga</label>
-                    <input type="date" id="tarikh2" name="tarikh2"><br><br>
+                <input type="date" id="tarikh2" name="tarikh2"><br><br>
+                <label>Sehingga</label>
+                <input type="date" id="tarikh2" name="tarikh2"><br><br>
                 <label>Berapa hari?</label><br>
                 <select name="hari" id="hari" required>
-                <option value="">--Pilih--</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-                <option value="6">6</option>
-                <option value="7">7</option>
-            </select><br><br>
-                    <label>Sebab?</label><br>
-                    <textarea placeholder="kerana ...." name="sebab" id="sebab" cols="50" rows="7"></textarea><br><br>
-          
-                    <input type="submit" value="Submit">
-                
+                    <option value="">--Pilih--</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select><br><br>
+                <label>Sebab?</label><br>
+                <textarea placeholder="kerana ...." name="sebab" id="sebab" cols="50" rows="7"></textarea><br><br>
+
+                <input type="submit" value="Submit">
+
             </form>
-            <form action="index.php"><button type="submit">Home</button><br><br 
-        </center> 
-        </fieldset> 
-    </body> 
-    </html>
+            <form action="table_g.php"><button type="submit">Back</button><br><br>
+        </center>
+    </fieldset>
+</body>
+
+</html>
